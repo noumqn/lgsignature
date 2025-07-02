@@ -27,3 +27,11 @@
     90% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+
+body, html {
+    font-family: 'Inter', system-ui, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, Arial, sans-serif;
+    font-weight: 600;
+}
