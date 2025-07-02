@@ -254,7 +254,7 @@ hr.more_margin {
 
 /* General links color */
 a {
-  color: #978667;
+  color: #d2a770;
   text-decoration: none;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -271,7 +271,7 @@ a:hover, a:focus {
 
 .title small {
   text-transform: uppercase;
-  color: #978667;
+  color: #d2a770;
   letter-spacing: 3px;
   font-weight: 600;
   display: block;
@@ -362,7 +362,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #978667;
+  background: #d2a770;
   outline: none;
   cursor: pointer;
   display: inline-flex;
@@ -427,7 +427,7 @@ a.btn_1.outline:hover,
   margin: 0;
   width: 2.6rem;
   height: 2.6rem;
-  background: #978667;
+  background: #d2a770;
   border-radius: 1.625rem;
 }
 .btn_4.learn-more .circle .icon {
@@ -1274,7 +1274,7 @@ header.fixed_header.sticky .hamburger__inner::after {
   text-transform: uppercase;
 }
 .sidebar-navigation nav a.active {
-  color: #978667;
+  color: #d2a770;
 }
 .sidebar-navigation nav ul {
   list-style: none;
@@ -1332,7 +1332,7 @@ header.fixed_header.sticky .hamburger__inner::after {
 
 .sidebar-navigation nav ul li a:focus,
 .sidebar-navigation nav ul li a:hover {
-  color: #978667;
+  color: #d2a770;
 }
 
 .sidebar-navigation nav ul .active {
@@ -1377,7 +1377,7 @@ header.fixed_header.sticky .hamburger__inner::after {
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #978667;
+  color: #d2a770;
 }
 .phone_element a span em {
   color: #333;
@@ -1393,7 +1393,7 @@ header.fixed_header.sticky .hamburger__inner::after {
   margin-right: 15px;
   font-size: 30px;
   font-size: 1.875rem;
-  color: #978667;
+  color: #d2a770;
 }
 .phone_element.no_borders {
   padding-top: 5px;
@@ -1669,7 +1669,7 @@ ul > li:first-child .image {
     display: none !important;
   }
   .main-menu #mainNav ul li a:hover, .main-menu #mainNav ul li a.active {
-    color: #978667 !important;
+    color: #d2a770 !important;
   }
   .main-menu #mainNav ul li a.btn_1 {
     background-color: transparent;
@@ -1756,7 +1756,7 @@ ul > li:first-child .image {
   }
   .submenu_version .main-menu ul ul {
     position: absolute;
-    border-top: 2px solid #978667;
+    border-top: 2px solid #d2a770;
     z-index: 1;
     visibility: hidden;
     left: 0;
@@ -1793,7 +1793,7 @@ ul > li:first-child .image {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #978667;
+    border-bottom-color: #d2a770;
     border-width: 7px;
     margin-left: -7px;
   }
@@ -1846,7 +1846,7 @@ ul > li:first-child .image {
   }
   .submenu_version .main-menu ul ul li:hover > a {
     background-color: #f9f9f9;
-    color: #978667 !important;
+    color: #d2a770 !important;
     padding-left: 20px;
     opacity: 1;
   }
@@ -1857,7 +1857,7 @@ ul > li:first-child .image {
     /* Menu mobile second level */
   }
   .submenu_version .main-menu ul > li > a.show-submenu:hover:after {
-    color: #978667;
+    color: #d2a770;
   }
   .submenu_version .main-menu ul > li > a.show-submenu:after {
     -moz-transition: all 0.3s ease-in-out;
@@ -1895,7 +1895,7 @@ ul > li:first-child .image {
     display: block;
   }
   .submenu_version .main-menu #mainNav a.show-submenu.show_normal {
-    color: #978667 !important;
+    color: #d2a770 !important;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -2401,7 +2401,7 @@ footer .copy {
   box-sizing: content-box;
   height: 50px;
   z-index: 1;
-  color: #978667;
+  color: #d2a770;
 }
 .booking_form input[type='submit'] {
   -moz-transition: all 0.3s ease-in-out;
@@ -2435,7 +2435,7 @@ footer .copy {
   }
 }
 .booking_form input[type='submit']:hover {
-  background-color: #978667;
+  background-color: #d2a770;
   color: #fff;
 }
 
@@ -2801,7 +2801,7 @@ a.box_cat_rooms:hover .background-image {
 .box_facilities i {
   font-size: 62px;
   font-size: 3.875rem;
-  color: #978667;
+  color: #d2a770;
 }
 .box_facilities h3 {
   font-size: 21px;
@@ -3069,7 +3069,7 @@ a.box_cat_rooms:hover .background-image {
   margin-bottom: 0;
   font-size: 14px;
   font-size: 0.875rem;
-  color: #978667;
+  color: #d2a770;
 }
 .box_item_info h2 {
   font-size: 30px;
@@ -3096,7 +3096,7 @@ a.box_cat_rooms:hover .background-image {
   height: 36px;
   font-size: 30px;
   font-size: 1.875rem;
-  color: #978667;
+  color: #d2a770;
   margin-right: 15px;
 }
 @media (max-width: 767px) {
@@ -3229,7 +3229,7 @@ a.box_cat_rooms:hover .background-image {
   font-size: 34px;
   font-size: 2.125rem;
   margin-right: 15px;
-  color: #978667;
+  color: #d2a770;
 }
 
 .progress {
@@ -3238,7 +3238,7 @@ a.box_cat_rooms:hover .background-image {
 }
 
 .progress-bar {
-  background-color: #978667;
+  background-color: #d2a770;
   width: 1px;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
@@ -3323,7 +3323,7 @@ a.box_cat_rooms:hover .background-image {
   font-weight: 600;
   font-size: 26px;
   font-size: 1.625rem;
-  color: #978667;
+  color: #d2a770;
 }
 .review_card .review_content .rating small {
   font-size: 12px;
@@ -3573,7 +3573,7 @@ a.box_contents em:before {
   height: 2px;
   content: "";
   transition: width 500ms ease;
-  background-color: #978667;
+  background-color: #d2a770;
 }
 
 a.box_contents:hover em:before {
@@ -3712,7 +3712,7 @@ a.box_contents:hover img {
 .contact_info ul li i {
   font-size: 36px;
   font-size: 2.25rem;
-  color: #978667;
+  color: #d2a770;
 }
 .contact_info ul li h4 {
   font-size: 21px;
@@ -3938,7 +3938,7 @@ a.box_contents:hover img {
 .tabs_menu .nav-link:hover,
 .tabs_menu .nav-link:focus {
   text-decoration: none;
-  color: #978667;
+  color: #d2a770;
 }
 .tabs_menu .nav-tabs .nav-link.disabled {
   color: #6c757d;
@@ -4175,7 +4175,7 @@ a.box_contents:hover img {
   }
 }
 #cookie-bar .cb-enable {
-  background: #978667;
+  background: #d2a770;
 }
 #cookie-bar .cb-enable:hover {
   background: #fff;
@@ -4307,7 +4307,7 @@ a.box_contents:hover img {
   color: #333;
 }
 .list_ok ul li:before {
-  color: #978667;
+  color: #d2a770;
   position: absolute;
   left: 0;
   top: -7px;
@@ -4560,13 +4560,13 @@ textarea.form-control {
   transition: all 200ms linear;
 }
 .progress-wrap:hover::after {
-  color: #978667;
+  color: #d2a770;
 }
 .progress-wrap svg path {
   fill: none;
 }
 .progress-wrap svg.progress-circle path {
-  stroke: #978667;
+  stroke: #d2a770;
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;
