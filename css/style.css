@@ -204,12 +204,12 @@ body {
   line-height: 1.6;
   font-family: "Montserrat", Helvetica, sans-serif;
   color: #333;
-  padding-top: 56px; /* Height of promo-banner + a little extra for spacing */
+  padding-top: 121px; /* promo-banner (56px) + header (65px) */
 }
 
 @media (max-width: 767px) {
   body {
-    padding-top: 44px;
+    padding-top: 100px; /* promo-banner (44px) + header (56px) for mobile */
   }
 }
 
