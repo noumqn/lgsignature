@@ -204,6 +204,13 @@ body {
   line-height: 1.6;
   font-family: "Montserrat", Helvetica, sans-serif;
   color: #333;
+  padding-top: 56px; /* Height of promo-banner + a little extra for spacing */
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 44px;
+  }
 }
 
 main {
@@ -4774,4 +4781,27 @@ textarea.form-control {
 
 .header {
   padding-top: 60px; /* slightly more than banner height */
+}
+
+.logo-container {
+  padding-top: 70px; /* Adjust this value as needed */
+}
+
+.main-content {
+  margin-top: 70px; /* Adjust this value to match your banner height */
+}
+
+/* Add padding to body or main to offset the promo banner height */
+.promo-banner {
+  width: 100%;
+  background: #ffe066;
+  color: #222;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
 }
