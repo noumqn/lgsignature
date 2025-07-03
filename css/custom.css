@@ -12,10 +12,8 @@
     padding: 0.5rem 0;
     border-bottom: 1px solid #e0c200;
     box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1201;
+    position: relative;
+    z-index: 1000;
     overflow: hidden;
 }
 .promo-banner span {
