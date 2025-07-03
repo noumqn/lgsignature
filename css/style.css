@@ -4783,3 +4783,18 @@ textarea.form-control {
 .main-content {
   margin-top: 70px; /* Adjust this value to match your banner height */
 }
+.promo-banner {
+  background-color: #d2a770;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 10000;
+  position: relative;
+}
+
+body.datepicker_mobile_full header.reveal_header {
+  margin-top: 40px; /* Adjust based on your banner height */
+}
+
