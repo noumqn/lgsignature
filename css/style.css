@@ -3805,22 +3805,20 @@ a.box_contents:hover img {
 }
 
 .banner {
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  overflow: hidden;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 350px;
-  position: relative;
-  margin-bottom: 60px;
+  height: 50px;
+  z-index: 1000;
 }
+
+.logo {
+  position: relative; /* or absolute, but adjust top accordingly */
+  margin-top: 60px; /* slightly more than banner height */
+  z-index: 1100; /* if you want it above the banner, but usually below */
+}
+
 .banner .wrapper {
   color: #fff;
   padding: 60px;
@@ -4772,4 +4770,8 @@ textarea.form-control {
 .pagination .prev,
 .pagination .next {
   font-size: 28px;
+}
+
+.header {
+  padding-top: 60px; /* slightly more than banner height */
 }
