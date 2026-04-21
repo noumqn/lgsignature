@@ -1560,7 +1560,6 @@
                     <a href="room-list-2.html">Rooms &amp; Suites</a>
                     <a href="events.html">Events</a>
                     <a href="about.html">About</a>
-                    <a href="blogs.html">Blogs</a>
                     <a href="contacts.html">Contact</a>
                     <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" class="btn-book-now-desktop">Book
                         Now</a>
@@ -1581,7 +1580,6 @@
                 <a href="room-list-2.html">Rooms &amp; Suites</a>
                 <a href="events.html">Events</a>
                 <a href="about.html">About</a>
-                <a href="blogs.html">Blogs</a>
                 <a href="contacts.html">Contact</a>
             </div>
         </div>
@@ -1645,6 +1643,53 @@
             <div class="container">
                 <div class="row">
 
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="room-card"
+                            style="background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;">
+                            <div class="room-image" style="height: 250px; overflow: hidden;">
+                                <div style="position: relative; cursor: pointer;" data-bs-toggle="modal"
+                                    data-bs-target="#birthdayModal">
+                                    <img src="img/partyhall.jpg" alt="Birthday Parties"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                    <div
+                                        style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">
+                                        <i class="bi bi-images"></i> View Photos
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room-content" style="padding: 2rem;">
+                                <h3
+                                    style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem; color: #000 !important;">
+                                    Birthday Parties</h3>
+                                <p style="color: #000 !important; line-height: 1.6; margin-bottom: 1.5rem;">Celebrate
+                                    your special day in style. Our beautifully decorated party hall is perfect for
+                                    intimate birthday gatherings, with personalised setups and warm hospitality.</p>
+                                <div class="amenities"
+                                    style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                                    <iconify-icon icon="fluent:balloon-24-regular"
+                                        style="color: #76b2c4; font-size: 1.2rem;" title="Decoration"></iconify-icon>
+                                    <iconify-icon icon="fluent:camera-24-regular"
+                                        style="color: #76b2c4; font-size: 1.2rem;" title="Photo Ops"></iconify-icon>
+                                    <iconify-icon icon="fluent:food-24-regular"
+                                        style="color: #76b2c4; font-size: 1.2rem;" title="Catering"></iconify-icon>
+                                    <iconify-icon icon="fluent:music-note-2-24-regular"
+                                        style="color: #76b2c4; font-size: 1.2rem;" title="Music Setup"></iconify-icon>
+                                    <iconify-icon icon="mingcute:air-condition-open-line"
+                                        style="color: #76b2c4; font-size: 1.2rem;" title="AC Hall"></iconify-icon>
+                                </div>
+                                <div class="room-buttons" style="display: flex; gap: 1rem;">
+                                    <a href="https://wa.me/919113929433?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20birthday%20party%20bookings."
+                                        class="btn btn-primary" target="_blank"
+                                        style="background: #76b2c4; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; color: white !important; text-decoration: none; font-weight: 600; flex: 1; text-align: center;">ENQUIRE
+                                        NOW</a>
+                                    <a href="#" class="btn btn-outline" data-bs-toggle="modal"
+                                        data-bs-target="#birthdayModal"
+                                        style="background: white; border: 2px solid #76b2c4; padding: 0.75rem 1.5rem; border-radius: 6px; color: #76b2c4 !important; text-decoration: none; font-weight: 600; flex: 1; text-align: center;">VIEW
+                                        PHOTOS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="room-card"
@@ -2134,6 +2179,28 @@
 
 
 </body>
+
+<!-- Birthday Parties Modal -->
+<div class="modal fade" id="birthdayModal" tabindex="-1" aria-labelledby="birthdayModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content" style="background-color: rgba(0,0,0,0.8); border: none;">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="birthdayCarouselModal" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/partyhall.jpg" class="d-block w-100" alt="Birthday Party Hall"
+                                style="height: 80vh; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Co-working Modal -->
 <div class="modal fade" id="coworkingModal" tabindex="-1" aria-labelledby="coworkingModalLabel" aria-hidden="true">
