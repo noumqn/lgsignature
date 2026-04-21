@@ -1,227 +1,184 @@
 # LG Signature Suites - Hotel in Kalyan Nagar, Bangalore
-# AI-Optimized Robots.txt file for Modern SEO
+# robots.txt - Open crawl policy for maximum SEO coverage
 # Website: https://lgsignaturesuites.com
-# Last Updated: 2024
+# Last Updated: 2025
 
+# -------------------------------------------------------
+# Allow ALL bots and crawlers (including SEO tools & scrapers)
+# -------------------------------------------------------
 User-agent: *
-
-# Allow all major search engines and AI crawlers to access main content
 Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /contacts.html
-Allow: /room-list-2.html
-Allow: /news-post.html
 
-# Allow access to important assets for AI understanding
-Allow: /img/
-Allow: /css/
-Allow: /js/
-Allow: /video/
-Allow: /sass/
-
-# Allow specific important images for AI visual recognition
-Allow: /img/lg-signature-suites-banner.jpg
-Allow: /img/logo.png
-Allow: /img/rooms/
-Allow: /img/gallery/
-Allow: /img/restaurant/
-Allow: /img/daymenu/
-Allow: /img/flex_slides/
-
-# Disallow admin and sensitive directories
+# Only block sensitive server-side resources
 Disallow: /phpmailer/
-Disallow: /coming_soon_assets/
-Disallow: /css/custom-icons/demo_icon_set_*.html
-Disallow: /css/bs-icon-font/index.html
-
-# Disallow temporary and system files
-Disallow: /*.DS_Store
-Disallow: /*.log
-Disallow: /*.tmp
-Disallow: /.*
+Disallow: /.git/
+Disallow: /.env
 Disallow: /cgi-bin/
 Disallow: /admin/
 Disallow: /private/
+Disallow: /*.log
+Disallow: /*.tmp
+Disallow: /*.DS_Store
 
-# Disallow duplicate content and less important pages
-Disallow: /404.html
-Disallow: /cookie-bar.html
-
-# Disallow query parameters that might create duplicate content
-Disallow: /*?*
-Disallow: /*&*
-
-# Traditional Search Engines
+# -------------------------------------------------------
+# Major search engines — explicit allow
+# -------------------------------------------------------
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
+User-agent: Googlebot-Image
+Allow: /img/
 
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 1
-
-# AI-Powered Search Engines & Crawlers
-User-agent: ChatGPT-User
-Allow: /
-Crawl-delay: 2
-
-User-agent: GPTBot
-Allow: /
-Crawl-delay: 2
-
-User-agent: Claude-Web
-Allow: /
-Crawl-delay: 2
-
-User-agent: Bard
-Allow: /
-Crawl-delay: 2
-
-User-agent: PerplexityBot
-Allow: /
-Crawl-delay: 2
-
-User-agent: YouBot
-Allow: /
-Crawl-delay: 2
-
-User-agent: BingPreview
-Allow: /
-Crawl-delay: 1
-
-User-agent: FacebookExternalHit
-Allow: /
-Crawl-delay: 1
-
-User-agent: Twitterbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: LinkedInBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: WhatsApp
-Allow: /
-Crawl-delay: 1
-
-User-agent: TelegramBot
-Allow: /
-Crawl-delay: 1
-
-# AI Training & Research Bots (allow for AI training data)
-User-agent: CCBot
-Allow: /
-Crawl-delay: 3
-
-User-agent: anthropic-ai
-Allow: /
-Crawl-delay: 3
+User-agent: Googlebot-Video
+Allow: /video/
 
 User-agent: Google-Extended
 Allow: /
-Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
-Crawl-delay: 2
+
+# -------------------------------------------------------
+# AI & LLM crawlers
+# -------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Bard
+Allow: /
 
 User-agent: Meta-ExternalAgent
 Allow: /
-Crawl-delay: 2
 
-# Academic and Research Crawlers
+User-agent: CCBot
+Allow: /
+
+# -------------------------------------------------------
+# SEO & analytics crawlers
+# -------------------------------------------------------
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: SeznamBot
+Allow: /
+
+User-agent: DataForSeoBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: MojeekBot
+Allow: /
+
+User-agent: BLEXBot
+Allow: /
+
+# -------------------------------------------------------
+# Social media crawlers
+# -------------------------------------------------------
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+# -------------------------------------------------------
+# Archive & research bots
+# -------------------------------------------------------
 User-agent: ia_archiver
 Allow: /
-Crawl-delay: 5
 
 User-agent: archive.org_bot
 Allow: /
-Crawl-delay: 5
 
 User-agent: Wayback
 Allow: /
-Crawl-delay: 5
 
-# Block problematic and aggressive bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: DataForSeoBot
-Disallow: /
-
-User-agent: SeznamBot
-Disallow: /
-
-User-agent: Baiduspider
-Disallow: /
-
-User-agent: YandexBot
-Disallow: /
-
-User-agent: PetalBot
-Disallow: /
-
-# Block scrapers and malicious bots
+# -------------------------------------------------------
+# Scrapers & generic HTTP clients
+# -------------------------------------------------------
 User-agent: Scrapy
-Disallow: /
+Allow: /
 
 User-agent: Python-urllib
-Disallow: /
+Allow: /
+
+User-agent: Python-requests
+Allow: /
 
 User-agent: curl
-Disallow: /
+Allow: /
 
 User-agent: wget
-Disallow: /
+Allow: /
 
 User-agent: HTTPie
-Disallow: /
+Allow: /
 
-# Sitemap locations for comprehensive indexing
+# -------------------------------------------------------
+# Sitemap locations
+# -------------------------------------------------------
 Sitemap: https://lgsignaturesuites.com/sitemap.xml
 Sitemap: https://lgsignaturesuites.com/sitemap-images.xml
 Sitemap: https://lgsignaturesuites.com/sitemap-videos.xml
 
-# Host directive for canonical domain
+# Canonical host
 Host: https://lgsignaturesuites.com
-
-# Additional directives for AI optimization
-# Allow structured data and schema markup
-Allow: /*.json
-Allow: /*.rdf
-Allow: /*.xml
-
-# Allow access to video content for AI understanding
-Allow: /video/*.mp4
-Allow: /video/*.webm
-Allow: /video/*.ogv
-
-# Allow CSS and JS for proper page rendering
-Allow: /*.css
-Allow: /*.js
-
-# Allow font files for proper text rendering
-Allow: /*.woff
-Allow: /*.woff2
-Allow: /*.ttf
-Allow: /*.eot
-Allow: /*.svg
