@@ -104,8 +104,10 @@ h6 {
   }
 
   .logo-section img {
-    width: 3.5rem !important;
-    height: 3.5rem !important;
+    content: url("../img/LG%20Rect%20logo.png") !important;
+    width: auto !important;
+    height: 2.5rem !important;
+    max-width: 100% !important;
     object-fit: contain !important;
   }
 
