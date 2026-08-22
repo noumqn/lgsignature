@@ -176,9 +176,9 @@ Allow: /
 # -------------------------------------------------------
 # Sitemap locations
 # -------------------------------------------------------
-Sitemap: https://lgsignaturesuites.com/sitemap.xml
-Sitemap: https://lgsignaturesuites.com/sitemap-images.xml
-Sitemap: https://lgsignaturesuites.com/sitemap-videos.xml
+Sitemap: https://www.lgsignaturesuites.com/sitemap.xml
+Sitemap: https://www.lgsignaturesuites.com/sitemap-images.xml
+Sitemap: https://www.lgsignaturesuites.com/sitemap-videos.xml
 
 # Canonical host
-Host: https://lgsignaturesuites.com
+Host: https://www.lgsignaturesuites.com
