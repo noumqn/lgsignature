@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Dine at the in-house restaurant at Hotel LG Signature Suites, Kalyan Nagar, Bangalore. Enjoy freshly prepared meals in a warm, comfortable setting. Open to hotel guests and visitors.">
+        content="Dine at the in-house restaurant at Hotel LG Signature Suites in Kalyan Nagar, Bangalore. Enjoy freshly prepared meals, breakfast, and multi-cuisine delicacies in a comfortable setting.">
     <meta name="author" content="Nouman">
     <meta name="keywords"
-        content="restaurant in Kalyan Nagar Bangalore, hotel restaurant Bangalore, dining near Manyata Tech Park, restaurant near Kalyan Nagar, food in Kalyan Nagar, hotel dining Bangalore, LG Signature Suites restaurant">
+        content="restaurant in Kalyan Nagar Bangalore, hotel restaurant Bangalore, dining near Manyata Tech Park, restaurant near Kalyan Nagar, food in Kalyan Nagar, hotel dining Bangalore, LG Signature Suites restaurant, breakfast in Kalyan Nagar">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Restaurant | Hotel LG Signature Suites - Kalyan Nagar, Bangalore">
@@ -35,7 +35,7 @@
             "https://lgsignaturesuites.com/img/restaurant/1.webp",
             "https://lgsignaturesuites.com/img/restaurant/2.webp"
           ],
-          "description": "In-house restaurant at Hotel LG Signature Suites, serving freshly prepared meals in Kalyan Nagar, Bangalore. Open to hotel guests and visitors.",
+          "description": "In-house restaurant at Hotel LG Signature Suites, serving freshly prepared multi-cuisine meals in Kalyan Nagar, Bangalore.",
           "servesCuisine": "Multi-cuisine",
           "address": {
             "@type": "PostalAddress",
@@ -115,269 +115,280 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <!-- Iconify Script -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <!-- DARK THEME CSS -->
     <link href="css/dark-theme.css" rel="stylesheet">
 
+    <!-- Page Specific Styles -->
     <style>
-        /* Always Visible Social Icons */
-        .social-toggle-btn {
-            display: none !important;
+        .scroll-scape-container {
+            position: relative;
+            overflow-x: hidden;
+            background: white;
         }
 
-        .social-menu {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 15px !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-            transform: translateX(0) !important;
-            position: relative !important;
-            right: auto !important;
-            bottom: auto !important;
-            pointer-events: all !important;
+        body {
+            background: white;
         }
 
-        @media (max-width: 600px) {
-            .social-menu {
-                gap: 10px !important;
+        /* Room & Service Cards Styling */
+        .room-card {
+            color: #000 !important;
+        }
+
+        .room-card h3 {
+            color: #000 !important;
+        }
+
+        .room-card p {
+            color: #000 !important;
+        }
+
+        .room-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(118, 178, 196, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .rooms-section {
+                padding: 2rem 0 !important;
+            }
+
+            .room-content {
+                padding: 1.5rem !important;
+            }
+
+            .room-buttons {
+                flex-direction: column !important;
+                gap: 0.75rem !important;
+            }
+
+            .room-card {
+                margin: 0 0.5rem !important;
+                width: calc(100% - 1rem) !important;
+            }
+
+            .room-image {
+                height: 200px !important;
+            }
+
+            .room-content {
+                padding: 1rem !important;
+            }
+
+            .room-content h3 {
+                font-size: 1.25rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            .room-content p {
+                font-size: 0.9rem !important;
+                line-height: 1.5 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .amenities {
+                gap: 0.75rem !important;
+                margin-bottom: 1.5rem !important;
             }
         }
 
-        /* Chatbot Floating Button and Window */
-        .chatbot-container {
-            position: fixed;
-            bottom: 5.5rem;
-            left: 2rem;
-            z-index: 1000;
-        }
-
-        .chatbot-toggle {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: rgba(118, 178, 196, 0.15);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 0 20px rgba(118, 178, 196, 0.4);
-            color: white;
-            cursor: pointer;
+        .parallax-section {
+            height: 70vh;
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-            border: none;
-            outline: none;
-            animation: pulseGlow 3s ease-in-out infinite;
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 0 20px rgba(118, 178, 196, 0.4); }
-            50% { box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 0 30px rgba(118, 178, 196, 0.6); }
-        }
-
-        .chatbot-toggle:hover {
-            background: rgba(118, 178, 196, 0.25);
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5), 0 0 35px rgba(118, 178, 196, 0.7);
-            animation: none;
-        }
-
-        .chatbot-toggle i { transition: transform 0.3s ease; }
-        .chatbot-toggle.active i { transform: rotate(180deg); }
-
-        .chatbot-window {
-            position: absolute;
-            bottom: 70px;
-            left: 0;
-            width: 350px;
-            max-height: 500px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 16px;
-            box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            display: none;
-            flex-direction: column;
             overflow: hidden;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.3s ease;
-        }
-
-        .chatbot-window.active { display: flex; opacity: 1; transform: translateY(0); }
-
-        .chatbot-header {
-            background: linear-gradient(135deg, rgba(118, 178, 196, 0.9), rgba(118, 178, 196, 0.7));
-            padding: 1rem 1.25rem;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .chatbot-header h2 { margin: 0; font-size: 1.1rem; font-weight: 600; }
-
-        .chatbot-close {
-            background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;
-            padding: 0; width: 30px; height: 30px; display: flex; align-items: center;
-            justify-content: center; border-radius: 50%; transition: background 0.3s ease;
-        }
-        .chatbot-close:hover { background: rgba(255, 255, 255, 0.2); }
-
-        .chatbot-messages {
-            flex: 1; padding: 1.25rem; overflow-y: auto; max-height: 320px;
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        .chatbot-message { margin-bottom: 1rem; animation: fadeIn 0.3s ease; }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .bot-message {
-            background: white; padding: 0.75rem 1rem; border-radius: 12px 12px 12px 4px;
-            color: #333; font-size: 0.9rem; line-height: 1.5;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 85%;
-        }
-
-        .user-message {
-            background: linear-gradient(135deg, rgba(118, 178, 196, 0.9), rgba(118, 178, 196, 0.7));
-            padding: 0.75rem 1rem; border-radius: 12px 12px 4px 12px;
-            color: white; font-size: 0.9rem; line-height: 1.5; margin-left: auto; max-width: 85%;
-        }
-
-        .chatbot-options { padding: 0.75rem 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
-
-        .chatbot-option-btn {
-            background: rgba(118, 178, 196, 0.1); border: 1px solid rgba(118, 178, 196, 0.3);
-            padding: 0.75rem 1rem; border-radius: 8px; color: #333; font-size: 0.85rem;
-            cursor: pointer; transition: all 0.3s ease; text-align: left; font-weight: 500;
-        }
-        .chatbot-option-btn:hover {
-            background: rgba(118, 178, 196, 0.2); border-color: rgba(118, 178, 196, 0.5);
-            transform: translateX(4px);
-        }
-
-        .chatbot-input-area {
-            padding: 1rem 1.25rem; border-top: 1px solid rgba(0,0,0,0.1);
-            display: flex; gap: 0.5rem; align-items: center;
-        }
-
-        .chatbot-input {
-            flex: 1; padding: 0.75rem; border: 1px solid rgba(118, 178, 196, 0.3);
-            border-radius: 20px; font-size: 0.9rem; outline: none;
-            transition: all 0.3s ease; background: white;
-        }
-        .chatbot-input:focus {
-            border-color: rgba(118, 178, 196, 0.6);
-            box-shadow: 0 0 0 3px rgba(118, 178, 196, 0.1);
-        }
-
-        .chatbot-send {
-            width: 40px; height: 40px; border-radius: 50%;
-            background: linear-gradient(135deg, rgba(118, 178, 196, 0.9), rgba(118, 178, 196, 0.7));
-            border: none; color: white; cursor: pointer; display: flex;
-            align-items: center; justify-content: center; transition: all 0.3s ease; font-size: 1rem;
-        }
-        .chatbot-send:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(118, 178, 196, 0.4); }
-        .chatbot-send:disabled { opacity: 0.5; cursor: not-allowed; }
-
-        @media (max-width: 768px) {
-            .chatbot-container { bottom: 4.5rem; left: 1rem; }
-            .chatbot-window { width: 320px; max-height: 450px; }
-            .chatbot-toggle { width: 50px; height: 50px; font-size: 1.3rem; }
-        }
-
-        @media (max-width: 480px) {
-            .chatbot-container { bottom: 4rem; left: 0.75rem; right: 0.75rem; }
-            .chatbot-window { width: calc(100vw - 1.5rem); max-height: 400px; }
-            .chatbot-toggle { width: 48px; height: 48px; }
-        }
-
-        .scroll-scape-container { position: relative; overflow-x: hidden; background: white; }
-        body { background: white; }
-
-        .parallax-section {
-            height: 70vh; position: relative; display: flex;
-            align-items: center; justify-content: center; overflow: hidden;
         }
 
         @media (max-width: 768px) {
             .parallax-section {
-                height: 50vh !important; min-height: 50vh !important;
-                width: 100vw !important; margin-left: calc(-50vw + 50%) !important;
-                margin-right: calc(-50vw + 50%) !important;
+                height: 50vh !important;
+                min-height: 50vh !important;
             }
+
             .parallax-bg {
-                background-size: cover !important; background-position: center center !important;
-                background-attachment: scroll !important; width: 100% !important; height: 100% !important;
+                background-size: cover !important;
+                background-position: center center !important;
+                background-attachment: scroll !important;
+                width: 100% !important;
+                height: 100% !important;
             }
-            .parallax-content { padding: 0 0.5rem !important; }
-            .parallax-title { font-size: 2.5rem !important; line-height: 1.2 !important; margin-bottom: 1rem !important; color: #d4a971 !important; }
-            .parallax-button { padding: 0.75rem 1.25rem !important; font-size: 0.9rem !important; }
+
+            .parallax-content {
+                padding: 0 0.5rem !important;
+            }
+
+            .parallax-title {
+                font-size: 2.5rem !important;
+                line-height: 1.2 !important;
+                margin-bottom: 1rem !important;
+                color: #d4a971 !important;
+            }
+
+            .parallax-button {
+                padding: 0.75rem 1.25rem !important;
+                font-size: 0.9rem !important;
+            }
         }
 
         .parallax-bg {
-            position: absolute; top: 0; left: 0; width: 100%; height: 120%;
-            background-size: cover; background-position: center;
-            background-attachment: fixed; will-change: transform;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        .parallax-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; }
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
 
-        .parallax-content { position: relative; z-index: 10; text-align: center; color: white; padding: 0 1rem; }
+        .parallax-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
 
         .parallax-title {
-            font-size: 5rem; font-family: 'Abril Fatface', serif; color: #d4a971 !important;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.5); margin-bottom: 1.5rem; line-height: 1;
+            font-size: 5rem;
+            font-family: 'Abril Fatface', serif;
+            color: #d4a971 !important;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1.5rem;
+            line-height: 1;
         }
 
         .parallax-button {
-            display: inline-block; padding: 1rem 2.5rem;
-            background: rgba(212, 169, 113, 0.9); color: white !important;
-            text-decoration: none; border-radius: 4px; font-weight: 600;
-            letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.9rem;
-            transition: all 0.3s ease; border: 2px solid rgba(212, 169, 113, 0.9);
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: rgba(212, 169, 113, 0.9);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(212, 169, 113, 0.9);
         }
-        .parallax-button:hover { background: transparent; color: #d4a971 !important; }
 
-        /* Gallery grid */
-        .restaurant-gallery {
+        .parallax-button:hover {
+            background: transparent;
+            color: #d4a971 !important;
+        }
+
+        /* Info Highlights Cards */
+        .info-card-box {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .info-card-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            background: white;
+        }
+
+        .info-card-box i {
+            font-size: 2.2rem;
+            color: #76b2c4;
+            margin-bottom: 0.75rem;
+            display: inline-block;
+        }
+
+        .info-card-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: #000 !important;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .info-card-box p {
+            color: #666 !important;
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
+            gap: 1.25rem;
         }
 
         @media (max-width: 768px) {
-            .restaurant-gallery { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
         }
 
         @media (max-width: 480px) {
-            .restaurant-gallery { grid-template-columns: 1fr; }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        .gallery-img {
-            width: 100%; height: 220px; object-fit: cover;
-            border-radius: 8px; transition: transform 0.3s ease;
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 240px;
             cursor: pointer;
-        }
-        .gallery-img:hover { transform: scale(1.03); }
-
-        /* Info cards */
-        .info-card {
-            background: white; border-radius: 12px; padding: 2rem;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; height: 100%;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
 
-        .info-card i { font-size: 2rem; color: #76b2c4; margin-bottom: 1rem; display: block; }
-        .info-card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #000 !important; margin-bottom: 0.5rem; }
-        .info-card p { color: #666 !important; font-size: 0.95rem; margin: 0; }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-item .overlay-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
     </style>
 </head>
 
@@ -419,6 +430,7 @@
                     <a href="index.html">Home</a>
                     <a href="room-list-2.html">Rooms &amp; Suites</a>
                     <a href="events.html">Events</a>
+                    <a href="restaurant.html" style="color: #76b2c4; font-weight: 600;">Restaurant</a>
                     <a href="about.html">About</a>
                     <a href="contacts.html">Contact</a>
                     <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" class="btn-book-now-desktop">Book Now</a>
@@ -438,32 +450,39 @@
                 <a href="index.html">Home</a>
                 <a href="room-list-2.html">Rooms &amp; Suites</a>
                 <a href="events.html">Events</a>
+                <a href="restaurant.html">Restaurant</a>
                 <a href="about.html">About</a>
                 <a href="contacts.html">Contact</a>
             </div>
         </div>
     </header>
 
-    <!-- Floating Social Media Icons -->
+    <!-- Floating Social Media Icons - Always Visible -->
     <div class="floating-social-collapsible">
         <div class="social-menu" id="social-menu">
             <a href="https://g.page/r/CYLwnGL5wWz8EBM/review" target="_blank" title="Google Review">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                    <path
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                    <path
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                    <path
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                    <path
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                 </svg>
             </a>
             <a href="https://www.tripadvisor.in/Hotel_Review-g297628-d28108805-Reviews-LG_Signature_Suites-Bengaluru_Bangalore_District_Karnataka.html"
                 target="_blank" title="TripAdvisor">
                 <svg width="24" height="24" viewBox="0 0 50 50" fill="currentColor">
-                    <path d="M 25 11 C 19.167969 11 13.84375 12.511719 9.789063 15 L 2 15 C 2 15 3.753906 17.152344 4.578125 19.578125 C 2.96875 21.621094 2 24.195313 2 27 C 2 33.628906 7.371094 39 14 39 C 17.496094 39 20.636719 37.492188 22.828125 35.105469 L 25 38 L 27.171875 35.105469 C 29.363281 37.492188 32.503906 39 36 39 C 42.628906 39 48 33.628906 48 27 C 48 24.195313 47.03125 21.621094 45.421875 19.578125 C 46.246094 17.152344 48 15 48 15 L 40.203125 15 C 36.148438 12.511719 30.828125 11 25 11 Z M 25 13 C 28.882813 13 32.585938 13.707031 35.800781 15.011719 C 30.964844 15.089844 26.824219 18.027344 25 22.214844 C 23.171875 18.019531 19.023438 15.078125 14.171875 15.011719 L 14.242188 14.988281 C 17.453125 13.699219 21.144531 13 25 13 Z M 14 17 C 19.523438 17 24 21.476563 24 27 C 24 32.523438 19.523438 37 14 37 C 8.476563 37 4 32.523438 4 27 C 4 21.476563 8.476563 17 14 17 Z M 36 17 C 41.523438 17 46 21.476563 46 27 C 46 32.523438 41.523438 37 36 37 C 30.476563 37 26 32.523438 26 27 C 26 21.476563 30.476563 17 36 17 Z M 14 21 C 10.6875 21 8 23.6875 8 27 C 8 30.3125 10.6875 33 14 33 C 17.3125 33 20 30.3125 20 27 C 20 23.6875 17.3125 21 14 21 Z M 36 21 C 32.6875 21 30 23.6875 30 27 C 30 30.3125 32.6875 33 36 33 C 39.3125 33 42 30.3125 42 27 C 42 23.6875 39.3125 21 36 21 Z M 14 23 C 16.210938 23 18 24.789063 18 27 C 18 29.210938 16.210938 31 14 31 C 11.789063 31 10 29.210938 10 27 C 10 24.789063 11.789063 23 14 23 Z M 36 23 C 38.210938 23 40 24.789063 40 27 C 40 29.210938 38.210938 31 36 31 C 33.789063 31 32 29.210938 32 27 C 32 24.789063 33.789063 23 36 23 Z M 14 25 C 12.894531 25 12 25.894531 12 27 C 12 28.105469 12.894531 29 14 29 C 15.105469 29 16 28.105469 16 27 C 16 25.894531 15.105469 25 14 25 Z M 36 25 C 34.894531 25 34 25.894531 34 27 C 34 28.105469 34.894531 29 36 29 C 37.105469 29 38 28.105469 38 27 C 38 25.894531 37.105469 25 36 25 Z" />
+                    <path
+                        d="M 25 11 C 19.167969 11 13.84375 12.511719 9.789063 15 L 2 15 C 2 15 3.753906 17.152344 4.578125 19.578125 C 2.96875 21.621094 2 24.195313 2 27 C 2 33.628906 7.371094 39 14 39 C 17.496094 39 20.636719 37.492188 22.828125 35.105469 L 25 38 L 27.171875 35.105469 C 29.363281 37.492188 32.503906 39 36 39 C 42.628906 39 48 33.628906 48 27 C 48 24.195313 47.03125 21.621094 45.421875 19.578125 C 46.246094 17.152344 48 15 48 15 L 40.203125 15 C 36.148438 12.511719 30.828125 11 25 11 Z M 25 13 C 28.882813 13 32.585938 13.707031 35.800781 15.011719 C 30.964844 15.089844 26.824219 18.027344 25 22.214844 C 23.171875 18.019531 19.023438 15.078125 14.171875 15.011719 L 14.242188 14.988281 C 17.453125 13.699219 21.144531 13 25 13 Z M 14 17 C 19.523438 17 24 21.476563 24 27 C 24 32.523438 19.523438 37 14 37 C 8.476563 37 4 32.523438 4 27 C 4 21.476563 8.476563 17 14 17 Z M 36 17 C 41.523438 17 46 21.476563 46 27 C 46 32.523438 41.523438 37 36 37 C 30.476563 37 26 32.523438 26 27 C 26 21.476563 30.476563 17 36 17 Z M 14 21 C 10.6875 21 8 23.6875 8 27 C 8 30.3125 10.6875 33 14 33 C 17.3125 33 20 30.3125 20 27 C 20 23.6875 17.3125 21 14 21 Z M 36 21 C 32.6875 21 30 23.6875 30 27 C 30 30.3125 32.6875 33 36 33 C 39.3125 33 42 30.3125 42 27 C 42 23.6875 39.3125 21 36 21 Z M 14 23 C 16.210938 23 18 24.789063 18 27 C 18 29.210938 16.210938 31 14 31 C 11.789063 31 10 29.210938 10 27 C 10 24.789063 11.789063 23 14 23 Z M 36 23 C 38.210938 23 40 24.789063 40 27 C 40 29.210938 38.210938 31 36 31 C 33.789063 31 32 29.210938 32 27 C 32 24.789063 33.789063 23 36 23 Z M 14 25 C 12.894531 25 12 25.894531 12 27 C 12 28.105469 12.894531 29 14 29 C 15.105469 29 16 28.105469 16 27 C 16 25.894531 15.105469 25 14 25 Z M 36 25 C 34.894531 25 34 25.894531 34 27 C 34 28.105469 34.894531 29 36 29 C 37.105469 29 38 28.105469 38 27 C 38 25.894531 37.105469 25 36 25 Z" />
                 </svg>
             </a>
             <a href="https://wa.me/919113929433" target="_blank" title="WhatsApp">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
                 </svg>
             </a>
             <a href="#" id="chat-icon-toggle" title="Chat" style="cursor: pointer;">
@@ -475,102 +494,244 @@
     <main>
         <!-- Hero Section -->
         <section class="parallax-section">
-            <div class="parallax-bg" style="background-image: url('img/newrestaurantimage.webp'); background-position: center center;"></div>
-            <div class="parallax-overlay" style="background: rgba(0,0,0,0.35);"></div>
-            <div class="parallax-content">
-                <h2 class="parallax-title">RESTAURANT</h2>
-                <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" class="parallax-button">Book a Stay</a>
+            <div class="parallax-bg"
+                style="background-image: url('img/newrestaurantimage.webp'); background-position: center center;"></div>
+            <div class="parallax-overlay" style="background: rgba(0, 0, 0, 0.35);"></div>
+
+            <div
+                style="position: relative; z-index: 20; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 1rem;">
+                <div class="parallax-content">
+                    <h2 class="parallax-title">RESTAURANT</h2>
+                    <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" class="parallax-button">Book a Stay</a>
+                </div>
             </div>
         </section>
 
-        <!-- Info Section -->
-        <section style="background: white; padding: 4rem 0;">
+        <!-- Intro Section -->
+        <section class="rooms-section" style="background: white; padding: 4rem 0;">
             <div class="container">
-
-                <!-- Intro -->
-                <div style="text-align: center; max-width: 720px; margin: 0 auto 3.5rem auto;">
-                    <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #000 !important; margin-bottom: 0.5rem; font-weight: 700;">
-                        Dining at LG Signature Suites, Kalyan Nagar
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem auto;">
+                    <h2
+                        style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 0.5rem; color: #000 !important; font-weight: 700;">
+                        Dining at LG Signature Suites
                     </h2>
-                    <p style="color: #76b2c4 !important; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;">
-                        IN-HOUSE RESTAURANT · BANGALORE
+                    <p
+                        style="color: #76b2c4 !important; font-size: 1rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;">
+                        IN-HOUSE MULTI-CUISINE DINING · KALYAN NAGAR
                     </p>
-                    <p style="color: #555 !important; line-height: 1.8; font-size: 1.05rem;">
-                        Our in-house restaurant offers freshly prepared meals in a warm, comfortable setting — perfect for a relaxed breakfast, a quick lunch, or a satisfying dinner after a long day. Whether you're a hotel guest or a local visitor, you're welcome at our table.
+                    <p style="color: #555 !important; line-height: 1.8; font-size: 1.1rem;">
+                        Enjoy delicious, freshly prepared meals right at Hotel LG Signature Suites. From energizing morning breakfasts and aromatic South Indian filter coffee to flavorful North Indian curries and comforting continental choices, our restaurant caters to in-house guests and visitors alike.
                     </p>
                 </div>
 
-                <!-- Info Cards -->
+                <!-- Info Highlights -->
                 <div class="row g-4 mb-5">
-                    <div class="col-md-3 col-6">
-                        <div class="info-card">
-                            <i class="bi bi-clock"></i>
+                    <div class="col-lg-3 col-6">
+                        <div class="info-card-box">
+                            <i class="bi bi-clock-history"></i>
                             <h3>Hours</h3>
-                            <p>7:00 AM – 10:00 PM<br>Open daily</p>
+                            <p>7:00 AM – 10:00 PM<br>Open 7 Days a Week</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div class="info-card">
+                    <div class="col-lg-3 col-6">
+                        <div class="info-card-box">
                             <i class="bi bi-egg-fried"></i>
                             <h3>Cuisine</h3>
-                            <p>Multi-cuisine<br>Indian &amp; Continental</p>
+                            <p>Multi-Cuisine<br>Indian &amp; Continental</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div class="info-card">
-                            <i class="bi bi-people"></i>
-                            <h3>Open To</h3>
-                            <p>Hotel guests<br>&amp; walk-in visitors</p>
+                    <div class="col-lg-3 col-6">
+                        <div class="info-card-box">
+                            <i class="bi bi-cup-hot"></i>
+                            <h3>Services</h3>
+                            <p>Dine-In, Cafe<br>&amp; In-Room Dining</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div class="info-card">
+                    <div class="col-lg-3 col-6">
+                        <div class="info-card-box">
                             <i class="bi bi-geo-alt"></i>
                             <h3>Location</h3>
-                            <p>Kalyan Nagar<br>Bangalore 560043</p>
+                            <p>Kalyan Nagar<br>Bengaluru 560043</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gallery -->
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #000 !important; margin-bottom: 1.5rem; text-align: center;">
-                    Gallery
-                </h3>
-                <div class="restaurant-gallery mb-5">
-                    <img loading="lazy" src="img/restaurant/1.webp" alt="Restaurant at LG Signature Suites Kalyan Nagar Bangalore" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/2.webp" alt="Dining area at LG Signature Suites" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/3.webp" alt="Restaurant interior LG Signature Suites" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/4.webp" alt="Food served at LG Signature Suites restaurant" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/5.webp" alt="Meals at hotel restaurant Kalyan Nagar" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/6.webp" alt="In-house dining at LG Signature Suites Bangalore" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/7.webp" alt="Restaurant ambiance LG Signature Suites" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/8.webp" alt="Breakfast at hotel restaurant Bangalore" class="gallery-img">
-                    <img loading="lazy" src="img/restaurant/9.webp" alt="Dinner at LG Signature Suites restaurant" class="gallery-img">
+                <!-- Dining Experience Cards -->
+                <div class="row mb-5">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="room-card"
+                            style="background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                            <div class="room-image" style="height: 240px; overflow: hidden; position: relative; cursor: pointer;"
+                                data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                                <img loading="lazy" src="img/restaurant/1.webp" alt="Restaurant Interior and Dining Space"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div
+                                    style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">
+                                    <i class="bi bi-images"></i> View Photos
+                                </div>
+                            </div>
+                            <div class="room-content" style="padding: 2rem; flex: 1; display: flex; flex-direction: column;">
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; color: #000 !important;">
+                                    Breakfast &amp; Fresh Coffee
+                                </h3>
+                                <p style="color: #666 !important; line-height: 1.6; margin-bottom: 1.5rem; flex: 1;">
+                                    Start your morning right with wholesome breakfast options, freshly brewed tea, artisanal coffee, and freshly made delicacies prepared by our culinary team.
+                                </p>
+                                <div class="amenities" style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                                    <iconify-icon icon="fluent:food-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Breakfast"></iconify-icon>
+                                    <iconify-icon icon="fluent:drink-coffee-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Coffee"></iconify-icon>
+                                    <iconify-icon icon="mingcute:air-condition-open-line" style="color: #76b2c4; font-size: 1.2rem;" title="AC Seating"></iconify-icon>
+                                </div>
+                                <div class="room-buttons" style="display: flex; gap: 1rem;">
+                                    <a href="#" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal"
+                                        style="background: white; border: 2px solid #76b2c4; padding: 0.75rem 1.5rem; border-radius: 6px; color: #76b2c4 !important; text-decoration: none; font-weight: 600; flex: 1; text-align: center;">VIEW GALLERY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="room-card"
+                            style="background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                            <div class="room-image" style="height: 240px; overflow: hidden; position: relative; cursor: pointer;"
+                                data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                                <img loading="lazy" src="img/restaurant/4.webp" alt="Multi Cuisine Lunch and Dinner"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div
+                                    style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">
+                                    <i class="bi bi-images"></i> View Photos
+                                </div>
+                            </div>
+                            <div class="room-content" style="padding: 2rem; flex: 1; display: flex; flex-direction: column;">
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; color: #000 !important;">
+                                    Lunch &amp; Dinner Delicacies
+                                </h3>
+                                <p style="color: #666 !important; line-height: 1.6; margin-bottom: 1.5rem; flex: 1;">
+                                    A wide selection of North Indian favorites, South Indian specialties, tandoori flavors, and continental dishes made with fresh ingredients.
+                                </p>
+                                <div class="amenities" style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                                    <iconify-icon icon="fluent:food-pizza-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Multi Cuisine"></iconify-icon>
+                                    <iconify-icon icon="fluent:room-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Room Service"></iconify-icon>
+                                    <iconify-icon icon="fluent:wifi-1-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Free Wi-Fi"></iconify-icon>
+                                </div>
+                                <div class="room-buttons" style="display: flex; gap: 1rem;">
+                                    <a href="https://wa.me/919113929433?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20restaurant%20dining%20and%20orders."
+                                        class="btn btn-primary" target="_blank"
+                                        style="background: #76b2c4; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; color: white !important; text-decoration: none; font-weight: 600; flex: 1; text-align: center;">ENQUIRE NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="room-card"
+                            style="background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                            <div class="room-image" style="height: 240px; overflow: hidden; position: relative; cursor: pointer;"
+                                data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                                <img loading="lazy" src="img/restaurant/7.webp" alt="Warm Cozy Dining Ambience"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                <div
+                                    style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">
+                                    <i class="bi bi-images"></i> View Photos
+                                </div>
+                            </div>
+                            <div class="room-content" style="padding: 2rem; flex: 1; display: flex; flex-direction: column;">
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 0.75rem; color: #000 !important;">
+                                    In-Room Dining Comfort
+                                </h3>
+                                <p style="color: #666 !important; line-height: 1.6; margin-bottom: 1.5rem; flex: 1;">
+                                    Prefer to dine in privacy? Hotel guests can order hot meals, beverages, and snacks straight to their room with prompt in-room service.
+                                </p>
+                                <div class="amenities" style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                                    <iconify-icon icon="fluent:clock-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Prompt Service"></iconify-icon>
+                                    <iconify-icon icon="fluent:badge-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Clean & Hygienic"></iconify-icon>
+                                    <iconify-icon icon="fluent:heart-24-regular" style="color: #76b2c4; font-size: 1.2rem;" title="Hospitality"></iconify-icon>
+                                </div>
+                                <div class="room-buttons" style="display: flex; gap: 1rem;">
+                                    <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" target="_blank"
+                                        class="btn btn-primary"
+                                        style="background: #76b2c4; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; color: white !important; text-decoration: none; font-weight: 600; flex: 1; text-align: center;">BOOK A STAY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- CTA -->
-                <div style="text-align: center; background: #f8f9fa; border-radius: 16px; padding: 3rem 2rem;">
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #000 !important; margin-bottom: 1rem;">
-                        Staying with us?
+                <!-- Photo Gallery Grid -->
+                <div style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #000 !important; font-weight: 700; margin-bottom: 0.5rem;">
+                        Restaurant Gallery
                     </h3>
-                    <p style="color: #666 !important; font-size: 1rem; margin-bottom: 1.5rem;">
-                        Book a room and enjoy our restaurant throughout your stay at LG Signature Suites, Kalyan Nagar, Bangalore.
+                    <p style="color: #666 !important; font-size: 1rem;">Click on any image to view full size</p>
+                </div>
+
+                <div class="gallery-grid mb-5">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/1.webp" alt="Restaurant LG Signature Suites Kalyan Nagar Bangalore">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/2.webp" alt="Dining seating area LG Signature Suites">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/3.webp" alt="Restaurant tables and interior">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/4.webp" alt="Food dishes and dining service">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/5.webp" alt="Delicious meals at hotel restaurant">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/6.webp" alt="Fresh meals prepared at LG Signature Suites">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/7.webp" alt="Cozy dining ambiance">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/8.webp" alt="Breakfast and beverage setup">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#restaurantGalleryModal">
+                        <img loading="lazy" src="img/restaurant/9.webp" alt="Evening dining at LG Signature Suites Bangalore">
+                        <div class="overlay-badge"><i class="bi bi-arrows-fullscreen"></i> Enlarge</div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Banner -->
+                <div style="text-align: center; background: linear-gradient(135deg, rgba(118, 178, 196, 0.12) 0%, rgba(118, 178, 196, 0.04) 100%); border-radius: 16px; padding: 3.5rem 2rem; border: 1px solid rgba(118, 178, 196, 0.2);">
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: #000 !important; margin-bottom: 1rem; font-weight: 700;">
+                        Planning Your Visit?
+                    </h3>
+                    <p style="color: #555 !important; font-size: 1.1rem; max-width: 650px; margin: 0 auto 2rem auto; line-height: 1.6;">
+                        Book your stay at Hotel LG Signature Suites and enjoy comfortable accommodations, in-house dining, and warm Bangalore hospitality.
                     </p>
-                    <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" target="_blank"
-                        style="display: inline-block; padding: 0.9rem 2.5rem; background: #76b2c4; color: white !important; text-decoration: none; border-radius: 6px; font-weight: 600; letter-spacing: 0.05em; font-size: 1rem; transition: all 0.3s ease;">
-                        Book a Room
-                    </a>
-                    &nbsp;&nbsp;
-                    <a href="contacts.html"
-                        style="display: inline-block; padding: 0.9rem 2.5rem; background: transparent; color: #76b2c4 !important; text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid #76b2c4; font-size: 1rem; transition: all 0.3s ease;">
-                        Contact Us
-                    </a>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://live.ipms247.com/booking/book-rooms-Lgsignature" target="_blank"
+                            style="display: inline-block; padding: 0.9rem 2.5rem; background: #76b2c4; color: white !important; text-decoration: none; border-radius: 6px; font-weight: 600; letter-spacing: 0.05em; font-size: 1rem; transition: all 0.3s ease;">
+                            Book a Room
+                        </a>
+                        <a href="contacts.html"
+                            style="display: inline-block; padding: 0.9rem 2.5rem; background: white; color: #76b2c4 !important; text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid #76b2c4; font-size: 1rem; transition: all 0.3s ease;">
+                            Contact &amp; Location
+                        </a>
+                    </div>
                 </div>
 
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer style="background: #1a1a2e; position: relative; padding-top: 3rem;">
         <div class="container">
             <div class="row move_content">
@@ -593,7 +754,7 @@
                             </a></li>
                             <li><a href="https://www.tripadvisor.in/Hotel_Review-g297628-d28108805-Reviews-LG_Signature_Suites-Bengaluru_Bangalore_District_Karnataka.html?m=19905" target="_blank" title="TripAdvisor">
                                 <svg width="16" height="16" viewBox="0 0 50 50" fill="currentColor">
-                                    <path d="M 25 11 C 19.167969 11 13.84375 12.511719 9.789063 15 L 2 15 C 2 15 3.753906 17.152344 4.578125 19.578125 C 2.96875 21.621094 2 24.195313 2 27 C 2 33.628906 7.371094 39 14 39 C 17.496094 39 20.636719 37.492188 22.828125 35.105469 L 25 38 L 27.171875 35.105469 C 29.363281 37.492188 32.503906 39 36 39 C 42.628906 39 48 33.628906 48 27 C 48 24.195313 47.03125 21.621094 45.421875 19.578125 C 46.246094 17.152344 48 15 48 15 L 40.203125 15 C 36.148438 12.511719 30.828125 11 25 11 Z M 14 17 C 19.523438 17 24 21.476563 24 27 C 24 32.523438 19.523438 37 14 37 C 8.476563 37 4 32.523438 4 27 C 4 21.476563 8.476563 17 14 17 Z M 36 17 C 41.523438 17 46 21.476563 46 27 C 46 32.523438 41.523438 37 36 37 C 30.476563 37 26 32.523438 26 27 C 26 21.476563 30.476563 17 36 17 Z M 14 25 C 12.894531 25 12 25.894531 12 27 C 12 28.105469 12.894531 29 14 29 C 15.105469 29 16 28.105469 16 27 C 16 25.894531 15.105469 25 14 25 Z M 36 25 C 34.894531 25 34 25.894531 34 27 C 34 28.105469 34.894531 29 36 29 C 37.105469 29 38 28.105469 38 27 C 38 25.894531 37.105469 25 36 25 Z" />
+                                    <path d="M 25 11 C 19.167969 11 13.84375 12.511719 9.789063 15 L 2 15 C 2 15 3.753906 17.152344 4.578125 19.578125 C 2.96875 21.621094 2 24.195313 2 27 C 2 33.628906 7.371094 39 14 39 C 17.496094 39 20.636719 37.492188 22.828125 35.105469 L 25 38 L 27.171875 35.105469 C 29.363281 37.492188 32.503906 39 36 39 C 42.628906 39 48 33.628906 48 27 C 48 24.195313 47.03125 21.621094 45.421875 19.578125 C 46.246094 17.152344 48 15 48 15 L 40.203125 15 C 36.148438 12.511719 30.828125 11 25 11 Z M 25 13 C 28.882813 13 32.585938 13.707031 35.800781 15.011719 C 30.964844 15.089844 26.824219 18.027344 25 22.214844 C 23.171875 18.019531 19.023438 15.078125 14.171875 15.011719 L 14.242188 14.988281 C 17.453125 13.699219 21.144531 13 25 13 Z M 14 17 C 19.523438 17 24 21.476563 24 27 C 24 32.523438 19.523438 37 14 37 C 8.476563 37 4 32.523438 4 27 C 4 21.476563 8.476563 17 14 17 Z M 36 17 C 41.523438 17 46 21.476563 46 27 C 46 32.523438 41.523438 37 36 37 C 30.476563 37 26 32.523438 26 27 C 26 21.476563 30.476563 17 36 17 Z M 14 21 C 10.6875 21 8 23.6875 8 27 C 8 30.3125 10.6875 33 14 33 C 17.3125 33 20 30.3125 20 27 C 20 23.6875 17.3125 21 14 21 Z M 36 21 C 32.6875 21 30 23.6875 30 27 C 30 30.3125 32.6875 33 36 33 C 39.3125 33 42 30.3125 42 27 C 42 23.6875 39.3125 21 36 21 Z M 14 23 C 16.210938 23 18 24.789063 18 27 C 18 29.210938 16.210938 31 14 31 C 11.789063 31 10 29.210938 10 27 C 10 24.789063 11.789063 23 14 23 Z M 36 23 C 38.210938 23 40 24.789063 40 27 C 40 29.210938 38.210938 31 36 31 C 33.789063 31 32 29.210938 32 27 C 32 24.789063 33.789063 23 36 23 Z M 14 25 C 12.894531 25 12 25.894531 12 27 C 12 28.105469 12.894531 29 14 29 C 15.105469 29 16 28.105469 16 27 C 16 25.894531 15.105469 25 14 25 Z M 36 25 C 34.894531 25 34 25.894531 34 27 C 34 28.105469 34.894531 29 36 29 C 37.105469 29 38 28.105469 38 27 C 38 25.894531 37.105469 25 36 25 Z" />
                                 </svg>
                             </a></li>
                             <li><a href="https://www.makemytrip.com/hotels/review-of-lg_signature_suites-details-bangalore.html" target="_blank" title="MakeMyTrip Reviews">M</a></li>
@@ -665,32 +826,9 @@
                         mobileMenu.style.display = isOpen ? 'none' : 'block';
                     });
                 }
-
-                const parallaxElements = document.querySelectorAll('.parallax-bg');
-                function updateParallax() {
-                    const scrolled = window.pageYOffset;
-                    parallaxElements.forEach((element, index) => {
-                        const sectionOffset = window.innerHeight * index;
-                        const elementOffset = scrolled - sectionOffset;
-                        const sectionHeight = window.innerHeight;
-                        const delayThreshold = sectionHeight * 0.10;
-                        if (elementOffset > delayThreshold && elementOffset < sectionHeight) {
-                            const adjustedOffset = elementOffset - delayThreshold;
-                            element.style.transform = `translateY(${adjustedOffset * 0.5}px)`;
-                        } else if (elementOffset <= delayThreshold) {
-                            element.style.transform = 'translateY(0px)';
-                        }
-                    });
-                }
-                let ticking = false;
-                window.addEventListener('scroll', function () {
-                    if (!ticking) { requestAnimationFrame(updateParallax); ticking = true; }
-                    ticking = false;
-                });
-
             }, 100);
 
-            // Chatbot
+            // Chatbot functionality
             const chatbotWindow = document.getElementById('chatbot-window');
             const chatbotClose = document.getElementById('chatbot-close');
             const chatbotMessages = document.getElementById('chatbot-messages');
@@ -701,7 +839,7 @@
 
             const responses = {
                 'room-availability': { message: 'I can help you check room availability! Would you like to:', options: [{ text: '📅 Book a room now', action: 'book' }, { text: '💬 Chat with us on WhatsApp', action: 'whatsapp' }] },
-                'amenities': { message: 'We offer premium amenities including free WiFi, air conditioning, flat-screen TVs, room service, and more!', options: [{ text: '📋 See full amenities list', action: 'whatsapp' }, { text: '🏨 Book a room', action: 'book' }] },
+                'amenities': { message: 'We offer premium amenities including free WiFi, air conditioning, flat-screen TVs, in-house restaurant dining, room service, and more!', options: [{ text: '📋 See full amenities list', action: 'whatsapp' }, { text: '🏨 Book a room', action: 'book' }] },
                 'location': { message: 'We are located in Kalyan Nagar, Bengaluru, Karnataka.', options: [{ text: '🗺️ Get directions on WhatsApp', action: 'whatsapp' }, { text: '📞 Call for assistance', action: 'whatsapp' }] },
                 'pricing': { message: 'Our room rates vary by season and availability. For current pricing:', options: [{ text: '💰 Get pricing details on WhatsApp', action: 'whatsapp' }, { text: '🛏️ Check availability & book', action: 'book' }] },
                 'contact': { message: 'You can reach us via:', options: [{ text: '💬 WhatsApp: +91 91139 29433', action: 'whatsapp' }, { text: '📧 Email us', action: 'whatsapp' }] }
@@ -713,9 +851,15 @@
                 if (chatIconToggle) chatIconToggle.classList.toggle('active');
                 if (chatbotWindow.classList.contains('active')) chatbotInput.focus();
             }
-            chatbotClose.addEventListener('click', toggleChatbot);
+
+            if (chatbotClose) chatbotClose.addEventListener('click', toggleChatbot);
             const chatIconToggle = document.getElementById('chat-icon-toggle');
-            if (chatIconToggle) chatIconToggle.addEventListener('click', function (e) { e.preventDefault(); toggleChatbot(); });
+            if (chatIconToggle) {
+                chatIconToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    toggleChatbot();
+                });
+            }
 
             function addMessage(text, isUser = false) {
                 const messageDiv = document.createElement('div');
@@ -733,7 +877,11 @@
                     btn.textContent = option.text;
                     btn.addEventListener('click', () => {
                         if (option.action === 'whatsapp') redirectToWhatsApp(option.text);
-                        else if (option.action === 'book') { window.open('https://live.ipms247.com/booking/book-rooms-Lgsignature', '_blank'); addMessage('Great! Opening our booking page for you...', false); setTimeout(showInitialOptions, 1500); }
+                        else if (option.action === 'book') {
+                            window.open('https://live.ipms247.com/booking/book-rooms-Lgsignature', '_blank');
+                            addMessage('Great! Opening our booking page for you...', false);
+                            setTimeout(showInitialOptions, 1500);
+                        }
                     });
                     chatbotOptions.appendChild(btn);
                 });
@@ -743,8 +891,8 @@
                 chatbotOptions.innerHTML = `
                     <button class="chatbot-option-btn" data-question="room-availability">🛏️ Check Room Availability</button>
                     <button class="chatbot-option-btn" data-question="amenities">✨ What amenities do you offer?</button>
-                    <button class="chatbot-option-btn" data-question="location">📍 Location & Directions</button>
-                    <button class="chatbot-option-btn" data-question="pricing">💰 Room Rates & Packages</button>
+                    <button class="chatbot-option-btn" data-question="location">📍 Location &amp; Directions</button>
+                    <button class="chatbot-option-btn" data-question="pricing">💰 Room Rates &amp; Packages</button>
                     <button class="chatbot-option-btn" data-question="contact">📞 Contact Information</button>`;
                 document.querySelectorAll('.chatbot-option-btn').forEach(btn => btn.addEventListener('click', handleQuestionClick));
             }
@@ -768,11 +916,16 @@
                 if (!message) return;
                 addMessage(message, true);
                 chatbotInput.value = '';
-                setTimeout(() => { addMessage('Thank you! Let me connect you with our team on WhatsApp.', false); setTimeout(() => redirectToWhatsApp(message), 1000); }, 500);
+                setTimeout(() => { addMessage('Thank you! Let me connect you with our team on WhatsApp for assistance.', false); setTimeout(() => redirectToWhatsApp(message), 1000); }, 500);
             }
 
-            chatbotSend.addEventListener('click', handleUserMessage);
-            chatbotInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') handleUserMessage(); });
+            if (chatbotSend) chatbotSend.addEventListener('click', handleUserMessage);
+            if (chatbotInput) {
+                chatbotInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') handleUserMessage();
+                });
+            }
+
             document.querySelectorAll('.chatbot-option-btn').forEach(btn => btn.addEventListener('click', handleQuestionClick));
         });
     </script>
@@ -804,5 +957,66 @@
     </div>
 
 </body>
+
+<!-- Full Photo Gallery Modal -->
+<div class="modal fade" id="restaurantGalleryModal" tabindex="-1" aria-labelledby="restaurantGalleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content" style="background-color: rgba(0,0,0,0.85); border: none; border-radius: 16px;">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="restaurantCarouselModal" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img loading="lazy" src="img/restaurant/1.webp" class="d-block w-100" alt="Restaurant Interior"
+                                style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/2.webp" class="d-block w-100" alt="Dining Seating Area"
+                                style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/3.webp" class="d-block w-100" alt="Restaurant Tables & Setup"
+                                style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/4.webp" class="d-block w-100" alt="Multi Cuisine Food"
+                                style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/5.webp" class="d-block w-100" alt="Fresh Dishes"
+                                style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/6.webp" alt="Delicious Food at LG Signature Suites"
+                                class="d-block w-100" style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/7.webp" alt="Restaurant Ambiance"
+                                class="d-block w-100" style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/8.webp" alt="Breakfast Setup"
+                                class="d-block w-100" style="height: 80vh; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item">
+                            <img loading="lazy" src="img/restaurant/9.webp" alt="Evening Dining View"
+                                class="d-block w-100" style="height: 80vh; object-fit: contain;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarouselModal" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarouselModal" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
