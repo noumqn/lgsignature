@@ -27,7 +27,7 @@ const Index = () => {
                 className="w-10 h-10 md:w-12 md:h-12 object-contain"
               />
               <h1 className="font-abril text-foreground text-xl md:text-2xl lg:text-[28px] font-normal tracking-wider">
-                LG SIGNATURE SUITES
+                LG SIGNATURE SUITES BOUTIQUE HOTEL
               </h1>
             </div>
 
@@ -202,7 +202,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-black text-white text-center py-8">
         <p className="text-sm">
-          2025 by LG Signature Suites. Powered and secured by <span className="underline">Sea Socials</span>
+          2025 by LG Signature Suites Boutique Hotel. Powered and secured by <span className="underline">Sea Socials</span>
         </p>
       </footer>
     </div>

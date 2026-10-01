@@ -1,7 +1,7 @@
-# LG Signature Suites - Dark Theme Implementation
+# LG Signature Suites Boutique Hotel - Dark Theme Implementation
 
 ## Overview
-This document outlines the implementation of a premium dark theme for the LG Signature Suites website, transforming the existing light theme into a luxurious, modern dark interface while maintaining the white header as specified.
+This document outlines the implementation of a premium dark theme for the LG Signature Suites Boutique Hotel website, transforming the existing light theme into a luxurious, modern dark interface while maintaining the white header as specified.
 
 ## Theme Specifications
 
