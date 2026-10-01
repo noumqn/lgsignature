@@ -92,22 +92,27 @@ h6 {
 
 /* Mobile Header Logo Styling */
 @media (max-width: 768px) {
-  .logo-text {
-    display: none !important;
+  /* Text logo (mark + clean text) on mobile; replaces the old baked-in "LG Rect logo.png" image */
+  .logo-section .logo-text {
+    display: block !important;
+    font-size: clamp(0.78rem, 4vw, 1rem) !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
   }
 
   .logo-section {
     justify-content: flex-start !important;
+    gap: 0.6rem !important;
     width: auto !important;
     margin-right: auto !important;
     flex: 1 !important;
   }
 
   .logo-section img {
-    content: url("../img/LG%20Rect%20logo.png") !important;
-    width: auto !important;
+    width: 2.5rem !important;
     height: 2.5rem !important;
-    max-width: 100% !important;
+    flex-shrink: 0 !important;
     object-fit: contain !important;
   }
 
